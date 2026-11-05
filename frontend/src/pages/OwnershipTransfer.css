@@ -1,0 +1,797 @@
+.ownership-page {
+  color: #101923;
+  background: #ffffff;
+  font-family: Inter, Arial, sans-serif;
+  overflow: hidden;
+}
+
+.ownership-page * {
+  box-sizing: border-box;
+}
+
+.ownership-page a {
+  text-decoration: none;
+}
+
+.ownership-eyebrow {
+  display: inline-block;
+  color: #ed1025;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+.ownership-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 55px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 78px 7%;
+}
+
+.ownership-hero-content {
+  max-width: 620px;
+}
+
+.ownership-hero h1 {
+  margin: 0;
+  font-size: clamp(39px, 4.4vw, 65px);
+  line-height: 1.08;
+  letter-spacing: -2.5px;
+  font-weight: 800;
+}
+
+.ownership-hero h1 span,
+.ownership-section-heading h2 span {
+  color: #ed1025;
+}
+
+.ownership-hero-content > p {
+  max-width: 530px;
+  color: #657080;
+  font-size: 15px;
+  line-height: 1.9;
+  margin: 24px 0 29px;
+}
+
+.ownership-hero-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.ownership-primary-btn,
+.ownership-secondary-btn,
+.ownership-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  min-height: 51px;
+  padding: 0 22px;
+  font-size: 12px;
+  font-weight: 700;
+  transition: 0.25s ease;
+}
+
+.ownership-primary-btn,
+.ownership-submit-btn,
+.ownership-cta-btn {
+  color: #ffffff;
+  background: #ed1025;
+  border: 1px solid #ed1025;
+}
+
+.ownership-primary-btn:hover,
+.ownership-submit-btn:hover,
+.ownership-cta-btn:hover {
+  background: #c90019;
+  border-color: #c90019;
+}
+
+.ownership-secondary-btn {
+  color: #101923;
+  background: #ffffff;
+  border: 1px solid #dce1e7;
+}
+
+.ownership-secondary-btn:hover {
+  color: #ed1025;
+  border-color: #ed1025;
+}
+
+.ownership-trust-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 17px;
+  margin-top: 35px;
+}
+
+.ownership-trust-points span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #536071;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.ownership-trust-points b {
+  display: grid;
+  place-items: center;
+  width: 19px;
+  height: 19px;
+  color: #ed1025;
+  background: #fff0f1;
+  border-radius: 50%;
+  font-size: 11px;
+}
+
+.ownership-hero-visual {
+  position: relative;
+  min-width: 0;
+  padding: 0 0 32px 22px;
+}
+
+.ownership-image-frame {
+  position: relative;
+  height: 440px;
+  overflow: hidden;
+  background: #e9edf2;
+}
+
+.ownership-image-frame::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 7px;
+  height: 100%;
+  background: #ed1025;
+}
+
+.ownership-image-frame::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(10, 20, 32, 0.48),
+    transparent 50%
+  );
+  pointer-events: none;
+}
+
+.ownership-image-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ownership-image-caption {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.ownership-caption-line {
+  width: 27px;
+  height: 2px;
+  background: #ed1025;
+}
+
+.ownership-floating-card {
+  position: absolute;
+  right: -10px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  max-width: 280px;
+  padding: 18px 20px;
+  background: #ffffff;
+  box-shadow: 0 12px 40px rgba(16, 25, 35, 0.14);
+}
+
+.ownership-floating-icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 43px;
+  height: 43px;
+  color: #ffffff;
+  background: #ed1025;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.ownership-floating-card strong {
+  font-size: 12px;
+}
+
+.ownership-floating-card p {
+  margin: 6px 0 0;
+  color: #657080;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.ownership-benefits {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  padding: 34px 7%;
+  color: #ffffff;
+  background: #101923;
+}
+
+.ownership-benefits article {
+  display: flex;
+  gap: 17px;
+  padding: 5px 15px;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.ownership-benefits article:last-child {
+  border-right: 0;
+}
+
+.ownership-benefit-number {
+  color: #ed1025;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.ownership-benefits h3 {
+  margin: 0 0 8px;
+  font-size: 14px;
+}
+
+.ownership-benefits p {
+  margin: 0;
+  color: #aeb7c2;
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+.ownership-process,
+.ownership-documents,
+.ownership-faq {
+  padding: 85px 7%;
+}
+
+.ownership-section-heading {
+  max-width: 650px;
+  margin: 0 auto 42px;
+  text-align: center;
+}
+
+.ownership-section-heading h2,
+.ownership-enquiry-intro h2 {
+  margin: 0;
+  font-size: clamp(32px, 3.5vw, 46px);
+  line-height: 1.15;
+  letter-spacing: -1.5px;
+}
+
+.ownership-section-heading > p {
+  max-width: 580px;
+  margin: 18px auto 0;
+  color: #657080;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.ownership-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.ownership-step-card {
+  padding: 27px 23px;
+  background: #ffffff;
+  border: 1px solid #e6eaf0;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.ownership-step-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 35px rgba(16, 25, 35, 0.07);
+}
+
+.ownership-step-number {
+  color: #ed1025;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.ownership-step-line {
+  width: 40px;
+  height: 3px;
+  margin: 20px 0;
+  background: #ed1025;
+}
+
+.ownership-step-card h3 {
+  margin: 0 0 12px;
+  font-size: 16px;
+}
+
+.ownership-step-card p {
+  margin: 0;
+  color: #657080;
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+.ownership-documents {
+  background: #f5f7fa;
+}
+
+.ownership-document-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.ownership-document-card {
+  padding: 28px 25px;
+  background: #ffffff;
+  border: 1px solid #e5e9ef;
+}
+
+.ownership-document-header {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e9edf2;
+}
+
+.ownership-document-header > span {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  color: #ed1025;
+  background: #fff0f1;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.ownership-document-header h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.ownership-document-card ul {
+  display: grid;
+  gap: 17px;
+  list-style: none;
+  padding: 23px 0 0;
+  margin: 0;
+}
+
+.ownership-document-card li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: #536071;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.ownership-check {
+  color: #ed1025;
+  font-weight: 800;
+}
+
+.ownership-document-note {
+  max-width: 900px;
+  margin: 25px auto 0;
+  color: #657080;
+  font-size: 11px;
+  line-height: 1.8;
+  text-align: center;
+}
+
+
+
+.ownership-enquiry-intro > p {
+  margin: 22px 0;
+  color: #657080;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.ownership-enquiry-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 18px;
+  background: #f5f7fa;
+  border-left: 3px solid #ed1025;
+}
+
+.ownership-enquiry-note > span {
+  display: grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  color: #ffffff;
+  background: #101923;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.ownership-enquiry-note p {
+  margin: 0;
+  color: #536071;
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+.ownership-form {
+  padding: 32px;
+  border: 1px solid #e6eaf0;
+  box-shadow: 0 15px 50px rgba(16, 25, 35, 0.06);
+}
+
+.ownership-form-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 15px;
+  padding-bottom: 23px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #e8ebef;
+}
+
+.ownership-form-heading > div > span {
+  color: #ed1025;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+}
+
+.ownership-form-heading h3 {
+  margin: 9px 0 0;
+  font-size: 22px;
+}
+
+.ownership-form-step {
+  padding: 8px 10px;
+  color: #ed1025;
+  background: #fff0f1;
+  font-size: 10px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.ownership-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 16px;
+}
+
+.ownership-form-grid label {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  color: #273443;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.ownership-form-grid input,
+.ownership-form-grid select,
+.ownership-form-grid textarea {
+  width: 100%;
+  min-height: 47px;
+  padding: 12px;
+  color: #101923;
+  background: #ffffff;
+  border: 1px solid #dfe4eb;
+  border-radius: 0;
+  outline: none;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 400;
+  transition: border-color 0.2s ease;
+}
+
+.ownership-form-grid textarea {
+  resize: vertical;
+  line-height: 1.7;
+}
+
+.ownership-form-grid input:focus,
+.ownership-form-grid select:focus,
+.ownership-form-grid textarea:focus {
+  border-color: #ed1025;
+}
+
+.ownership-form-grid input::placeholder,
+.ownership-form-grid textarea::placeholder {
+  color: #9aa3af;
+}
+
+.ownership-full-width {
+  grid-column: 1 / -1;
+}
+
+.ownership-submit-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 52px;
+  margin-top: 27px;
+  padding: 0 20px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.ownership-submit-btn span {
+  font-size: 20px;
+}
+
+.ownership-form-disclaimer {
+  margin: 14px 0 0;
+  color: #8993a0;
+  font-size: 10px;
+  line-height: 1.7;
+}
+
+.ownership-faq {
+  background: #f5f7fa;
+}
+
+.ownership-faq-list {
+  max-width: 900px;
+  margin: 0 auto;
+  border-top: 1px solid #dfe4eb;
+}
+
+.ownership-faq-item {
+  border-bottom: 1px solid #dfe4eb;
+}
+
+.ownership-faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  padding: 22px 5px;
+  color: #101923;
+  background: transparent;
+  border: 0;
+  text-align: left;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.ownership-faq-toggle {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  color: #ed1025;
+  background: #ffffff;
+  border: 1px solid #e1e6ed;
+  font-size: 20px;
+}
+
+.ownership-faq-answer {
+  max-width: 780px;
+  margin: -5px 45px 23px 5px;
+  color: #657080;
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+.ownership-faq-item.active .ownership-faq-question {
+  color: #ed1025;
+}
+
+.ownership-bottom-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 65px 7%;
+  padding: 43px;
+  color: #ffffff;
+  background: #101923;
+}
+
+.ownership-bottom-cta > div > span {
+  color: #ed1025;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.ownership-bottom-cta h2 {
+  margin: 12px 0;
+  font-size: clamp(25px, 3vw, 37px);
+  letter-spacing: -1px;
+}
+
+.ownership-bottom-cta p {
+  margin: 0;
+  color: #b7c0ca;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.ownership-cta-btn {
+  flex-shrink: 0;
+}
+
+@media (max-width: 1050px) {
+  .ownership-hero {
+    gap: 32px;
+    padding: 60px 5%;
+  }
+
+  .ownership-image-frame {
+    height: 370px;
+  }
+
+  .ownership-hero h1 {
+    font-size: clamp(36px, 5vw, 52px);
+  }
+
+  .ownership-steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ownership-enquiry {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding: 75px 5%;
+  }
+
+  .ownership-benefits,
+  .ownership-process,
+  .ownership-documents,
+  .ownership-faq {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .ownership-bottom-cta {
+    margin: 50px 5%;
+  }
+}
+
+@media (max-width: 700px) {
+  .ownership-hero {
+    grid-template-columns: 1fr;
+    gap: 38px;
+    padding: 45px 6%;
+  }
+
+  .ownership-hero h1 {
+    font-size: clamp(37px, 10vw, 51px);
+    letter-spacing: -1.5px;
+  }
+
+  .ownership-hero-content > p {
+    font-size: 13px;
+  }
+
+  .ownership-trust-points {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .ownership-hero-visual {
+    padding: 0 0 28px 12px;
+  }
+
+  .ownership-image-frame {
+    height: 300px;
+  }
+
+  .ownership-floating-card {
+    right: -2px;
+    padding: 13px;
+    max-width: 245px;
+  }
+
+  .ownership-benefits {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 30px 6%;
+  }
+
+  .ownership-benefits article {
+    padding: 0 0 18px;
+    border-right: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .ownership-benefits article:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+
+  .ownership-process,
+  .ownership-documents,
+  .ownership-faq {
+    padding: 60px 6%;
+  }
+
+  .ownership-section-heading {
+    margin-bottom: 32px;
+  }
+
+  .ownership-steps-grid,
+  .ownership-document-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ownership-step-card,
+  .ownership-document-card {
+    padding: 24px;
+  }
+
+  
+
+  .ownership-form {
+    padding: 22px 16px;
+  }
+
+  .ownership-form-heading h3 {
+    font-size: 18px;
+  }
+
+  .ownership-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ownership-full-width {
+    grid-column: auto;
+  }
+
+  .ownership-bottom-cta {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 35px 6%;
+    padding: 30px 23px;
+  }
+
+  .ownership-faq-question {
+    font-size: 12px;
+  }
+}

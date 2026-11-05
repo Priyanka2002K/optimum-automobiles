@@ -1,0 +1,660 @@
+/* Optimum Automobiles — Free Estimate page
+   Theme: White, Dark Navy and Red */
+
+.estimate-page {
+  --er: #ed1025;
+  --en: #09294b;
+  --et: #172638;
+  --em: #637184;
+  --eb: #dce2e8;
+
+  color: var(--et);
+  background: #fff;
+  font-family: Inter, Arial, sans-serif;
+}
+
+.estimate-wrap {
+  width: min(1180px, calc(100% - 48px));
+  margin: auto;
+}
+
+/* INTRODUCTION */
+
+.estimate-intro {
+  background: linear-gradient(
+    110deg,
+    #f8fafc,
+    #fff 53%,
+    #edf1f5
+  );
+  border-bottom: 1px solid var(--eb);
+}
+
+.estimate-intro-grid {
+  min-height: 390px;
+  display: grid;
+  grid-template-columns: 0.92fr 1.08fr;
+  gap: 38px;
+  align-items: center;
+  padding-block: 36px;
+}
+
+.estimate-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--er);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.estimate-kicker i {
+  width: 23px;
+  height: 3px;
+  background: var(--er);
+  display: inline-block;
+}
+
+.estimate-intro h1 {
+  margin: 17px 0;
+  color: var(--en);
+  font-size: clamp(36px, 4.2vw, 57px);
+  line-height: 1.04;
+  letter-spacing: -1.5px;
+}
+
+.estimate-intro h1 em {
+  font-style: normal;
+  color: var(--er);
+}
+
+.estimate-intro-copy > p {
+  max-width: 510px;
+  color: var(--em);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.estimate-trust {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 17px;
+  margin-top: 24px;
+}
+
+.estimate-trust span {
+  font-size: 11px;
+  font-weight: 650;
+  color: var(--en);
+}
+
+.estimate-trust span:first-letter {
+  color: var(--er);
+}
+
+.estimate-visual {
+  position: relative;
+  min-height: 290px;
+  height: 100%;
+  max-height: 340px;
+}
+
+.estimate-visual:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: -10px;
+  width: 5px;
+  height: 75px;
+  background: var(--er);
+}
+
+.estimate-visual img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 290px;
+  max-height: 340px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 18px 45px #09294b20;
+}
+
+.estimate-badge {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 15px;
+  background: var(--en);
+  border-left: 3px solid var(--er);
+  color: white;
+}
+
+.estimate-badge > b {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ffffff70;
+  border-radius: 50%;
+}
+
+.estimate-badge strong,
+.estimate-badge small {
+  display: block;
+}
+
+.estimate-badge strong {
+  font-size: 9px;
+  letter-spacing: 0.4px;
+}
+
+.estimate-badge small {
+  margin-top: 4px;
+  color: #d9e2ec;
+  font-size: 10px;
+}
+
+/* FORM SECTION */
+
+.estimate-form-area {
+  padding: 62px 0 72px;
+}
+
+.estimate-heading {
+  margin-bottom: 27px;
+}
+
+.estimate-heading h2 {
+  margin: 10px 0 8px;
+  color: var(--en);
+  font-size: clamp(27px, 3vw, 36px);
+  letter-spacing: -0.7px;
+}
+
+.estimate-heading > p {
+  margin: 0;
+  color: var(--em);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.estimate-form {
+  padding: 30px;
+  border: 1px solid var(--eb);
+  border-radius: 7px;
+  background: #fff;
+  box-shadow: 0 14px 40px #09294b0b;
+}
+
+.estimate-form-heading {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 21px;
+}
+
+.estimate-form-heading > span {
+  display: grid;
+  place-items: center;
+  flex: 0 0 42px;
+  height: 42px;
+  border: 1px solid #ffd5d9;
+  border-radius: 5px;
+  background: #fff0f1;
+  color: var(--er);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.estimate-form-heading h3 {
+  margin: 0 0 5px;
+  color: var(--en);
+  font-size: 17px;
+}
+
+.estimate-form-heading p {
+  margin: 0;
+  color: var(--em);
+  font-size: 11px;
+}
+
+.estimate-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 17px 20px;
+}
+
+.estimate-fields-four {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.estimate-field {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 8px;
+  color: var(--en);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.estimate-field em {
+  display: inline;
+  color: var(--er);
+  font-style: normal;
+}
+
+.estimate-field input,
+.estimate-field select {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 44px;
+  padding: 0 12px;
+  border: 1px solid #d8dfe7;
+  border-radius: 4px;
+  outline: none;
+  background: #fff;
+  color: #263649;
+  font: 400 12px Inter, Arial, sans-serif;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.estimate-field input::placeholder {
+  color: #9aa5b2;
+}
+
+.estimate-field input:focus,
+.estimate-field select:focus {
+  border-color: var(--er);
+  box-shadow: 0 0 0 3px #ed102515;
+}
+
+.estimate-divider {
+  height: 1px;
+  margin: 28px 0;
+  background: var(--eb);
+}
+
+.estimate-form-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 27px;
+}
+
+.estimate-form-bottom p {
+  max-width: 470px;
+  margin: 0;
+  color: var(--em);
+  font-size: 10px;
+  line-height: 1.7;
+}
+
+.estimate-submit,
+.estimate-action {
+  display: inline-flex;
+  min-height: 45px;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 19px;
+  border: 1px solid var(--er);
+  border-radius: 4px;
+  background: var(--er);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.estimate-submit:hover,
+.estimate-action-red:hover {
+  background: #c90019;
+  border-color: #c90019;
+  transform: translateY(-1px);
+}
+
+.estimate-submit span,
+.estimate-action span {
+  font-size: 16px;
+}
+
+/* FORM FEEDBACK */
+
+.estimate-success,
+.estimate-error {
+  margin-bottom: 16px;
+  padding: 14px 16px;
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.estimate-success {
+  border: 1px solid #a7dfbd;
+  background: #effbf3;
+  color: #176538;
+}
+
+.estimate-success span {
+  display: block;
+  margin-top: 4px;
+}
+
+.estimate-error {
+  border: 1px solid #ffc7cd;
+  background: #fff3f4;
+  color: #b40016;
+}
+
+/* HOW IT WORKS */
+
+.estimate-process {
+  padding: 60px 0 68px;
+  background: #f5f7f9;
+}
+
+.estimate-center {
+  text-align: center;
+}
+
+.estimate-center .estimate-kicker {
+  justify-content: center;
+}
+
+.estimate-center h2 {
+  margin-bottom: 0;
+}
+
+.estimate-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.estimate-steps article {
+  position: relative;
+  min-height: 180px;
+  padding: 24px;
+  border: 1px solid var(--eb);
+  border-radius: 5px;
+  background: #fff;
+}
+
+.estimate-step {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  color: #dce2e9;
+  font-size: 27px;
+}
+
+.estimate-icon {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid #ffd1d6;
+  border-radius: 5px;
+  background: #fff5f6;
+  color: var(--er);
+  font-size: 24px;
+}
+
+.estimate-steps h3 {
+  margin: 17px 0 8px;
+  color: var(--en);
+  font-size: 16px;
+}
+
+.estimate-steps p {
+  margin: 0;
+  color: var(--em);
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+/* OPTIMUM BENEFITS */
+
+.estimate-standard {
+  padding: 60px 0;
+  color: #fff;
+  background: var(--en);
+}
+
+.estimate-standard-grid {
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.estimate-standard .estimate-kicker {
+  color: #ff9ca6;
+}
+
+.estimate-standard h2 {
+  max-width: 350px;
+  margin: 14px 0 10px;
+  color: #fff;
+  font-size: clamp(27px, 3vw, 35px);
+  line-height: 1.15;
+}
+
+.estimate-standard-grid > div:first-child > p {
+  max-width: 360px;
+  color: #d1dbe6;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.estimate-benefits {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.estimate-benefits article {
+  display: flex;
+  gap: 12px;
+  padding: 17px;
+  border: 1px solid #ffffff27;
+  border-radius: 4px;
+  background: #ffffff08;
+}
+
+.estimate-benefits article > b {
+  display: grid;
+  place-items: center;
+  flex: 0 0 32px;
+  height: 32px;
+  border: 1px solid #ed10256b;
+  border-radius: 50%;
+  color: #ff6b79;
+  font-size: 16px;
+}
+
+.estimate-benefits h3 {
+  margin: 2px 0 6px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.estimate-benefits p {
+  margin: 0;
+  color: #cbd6e2;
+  font-size: 10px;
+  line-height: 1.7;
+}
+
+/* CONTACT SECTION */
+
+.estimate-help {
+  padding: 45px 0;
+  background: #fff;
+}
+
+.estimate-help-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  padding: 27px 30px;
+  border: 1px solid var(--eb);
+  border-left: 4px solid var(--er);
+  border-radius: 4px;
+  background: linear-gradient(105deg, #f6f8fa, #fff);
+}
+
+.estimate-help h2 {
+  margin: 10px 0 8px;
+  color: var(--en);
+  font-size: clamp(21px, 2.5vw, 29px);
+}
+
+.estimate-help p {
+  margin: 0;
+  color: var(--em);
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.estimate-help-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.estimate-action-outline {
+  border-color: var(--en);
+  background: transparent;
+  color: var(--en);
+}
+
+.estimate-action-outline:hover {
+  background: var(--en);
+  color: #fff;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+  .estimate-intro-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .estimate-fields-four {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .estimate-standard-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 640px) {
+  .estimate-wrap {
+    width: calc(100% - 32px);
+  }
+
+  .estimate-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    padding-block: 30px;
+  }
+
+  .estimate-intro h1 {
+    font-size: clamp(35px, 10vw, 47px);
+  }
+
+  .estimate-intro-copy > p {
+    font-size: 13px;
+  }
+
+  .estimate-visual,
+  .estimate-visual img {
+    min-height: 210px;
+    max-height: 250px;
+  }
+
+  .estimate-form-area {
+    padding: 42px 0 48px;
+  }
+
+  .estimate-form {
+    padding: 20px 15px;
+  }
+
+  .estimate-fields,
+  .estimate-fields-four {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .estimate-divider {
+    margin: 23px 0;
+  }
+
+  .estimate-form-bottom {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .estimate-submit {
+    width: 100%;
+  }
+
+  .estimate-process {
+    padding: 42px 0;
+  }
+
+  .estimate-steps {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .estimate-steps article {
+    min-height: 0;
+  }
+
+  .estimate-standard {
+    padding: 42px 0;
+  }
+
+  .estimate-benefits {
+    grid-template-columns: 1fr;
+  }
+
+  .estimate-help {
+    padding: 28px 0;
+  }
+
+  .estimate-help-inner {
+    align-items: stretch;
+    flex-direction: column;
+    padding: 22px 17px;
+  }
+
+  .estimate-help-actions {
+    flex-direction: column;
+  }
+
+  .estimate-action {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}

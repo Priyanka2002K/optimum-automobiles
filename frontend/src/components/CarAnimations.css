@@ -1,0 +1,229 @@
+
+/* ==================================
+   1. HERO CAR IMAGE SLIDER
+================================== */
+
+.hero-car-slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  overflow: hidden;
+  background: #dce3e8;
+}
+
+.hero-car-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transform: translateX(35px);
+  transition:
+    opacity 1.4s ease-in-out,
+    transform 1.8s ease-in-out;
+  pointer-events: none;
+}
+
+.hero-car-image.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ==================================
+   2. FEATURED INVENTORY CAROUSEL
+================================== */
+
+.inventory-slider {
+  width: 100%;
+  overflow: hidden;
+  padding: 8px 0 18px;
+}
+
+.inventory-slider-track {
+  display: flex;
+  width: max-content;
+  gap: 18px;
+  animation: inventoryMoveRight 65s linear infinite;
+  will-change: transform;
+}
+
+.inventory-slider.is-paused .inventory-slider-track {
+  animation-play-state: paused;
+}
+
+.inventory-slide-card {
+  flex: 0 0 280px;
+  overflow: hidden;
+  border: 1px solid #dce3eb;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgb(5 35 59 / 7%);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.inventory-slide-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 22px rgb(5 35 59 / 14%);
+}
+
+.inventory-slide-card img {
+  display: block;
+  width: 100%;
+  height: 175px;
+  object-fit: cover;
+}
+
+.inventory-slide-content {
+  padding: 14px;
+}
+
+.inventory-slide-content h3 {
+  margin: 0 0 8px;
+  color: #082b49;
+  font-size: 16px;
+}
+
+.inventory-slide-content p {
+  margin: 0 0 10px;
+  color: #66788a;
+  font-size: 12px;
+}
+
+.inventory-slide-content strong {
+  display: block;
+  margin-bottom: 12px;
+  color: #082b49;
+}
+
+.inventory-slide-content a {
+  color: #e9233b;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* The duplicated cards make the loop seamless. */
+@keyframes inventoryMoveRight {
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* ==================================
+   3. BRAND LOGO SLIDER
+================================== */
+
+.brand-slider {
+  width: 100%;
+  overflow: hidden;
+  padding: 22px 0;
+}
+
+.brand-slider-track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  animation: brandsMoveRight 50s linear infinite;
+  will-change: transform;
+}
+
+.brand-slider:hover .brand-slider-track {
+  animation-play-state: paused;
+}
+
+.brand-slide {
+  flex: 0 0 170px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 28px;
+  color: #082b49;
+  text-decoration: none;
+}
+
+.brand-slide img {
+  display: block;
+  max-width: 100px;
+  max-height: 42px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.8;
+  transition:
+    filter 0.3s ease,
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.brand-slide:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.08);
+}
+
+.brand-slide span {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+@keyframes brandsMoveRight {
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* ==================================
+   RESPONSIVE
+================================== */
+
+@media (max-width: 768px) {
+  .hero-car-slider {
+    min-height: 230px;
+  }
+
+  .inventory-slider-track {
+    gap: 12px;
+    animation-duration: 45s;
+  }
+
+  .inventory-slide-card {
+    flex-basis: 245px;
+  }
+
+  .inventory-slide-card img {
+    height: 150px;
+  }
+
+  .brand-slider-track {
+    animation-duration: 38s;
+  }
+
+  .brand-slide {
+    flex-basis: 130px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .inventory-slider-track,
+  .brand-slider-track {
+    animation: none;
+  }
+
+  .hero-car-image {
+    transition: none;
+  }
+}

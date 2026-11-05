@@ -1,0 +1,2131 @@
+
+/* ==========================================
+   OPTIMUM AUTOMOBILES - OUR WORK
+   Header and Footer excluded
+========================================== */
+
+.our-work {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  color: #102b49;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+.our-work * {
+  box-sizing: border-box;
+}
+
+.our-work img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.ow-container {
+  width: 92%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.our-work h1,
+.our-work h2,
+.our-work h3,
+.our-work p {
+  margin-top: 0;
+}
+
+.ow-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 10px;
+  color: #173858;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+}
+
+.ow-eyebrow::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 2px;
+  flex-shrink: 0;
+  background: #ed2638;
+}
+
+.ow-primary-btn,
+.ow-outline-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 0 19px;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.ow-primary-btn {
+  border: 1px solid #ed2638;
+  background: #ed2638;
+  color: #fff;
+}
+
+.ow-primary-btn:hover {
+  border-color: #c7192d;
+  background: #c7192d;
+  transform: translateY(-2px);
+}
+
+.ow-outline-btn {
+  border: 1px solid #173858;
+  background: transparent;
+  color: #173858;
+}
+
+.ow-outline-btn:hover {
+  background: #102b49;
+  color: #fff;
+}
+
+/* ==========================================
+   HERO
+========================================== */
+
+.ow-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 350px;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 27, 47, 0.98) 0%,
+      rgba(5, 27, 47, 0.91) 35%,
+      rgba(5, 27, 47, 0.25) 72%,
+      rgba(5, 27, 47, 0.05) 100%
+    ),
+    url("https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1800&q=90")
+    center 55% / cover no-repeat;
+}
+
+.ow-hero-content {
+  max-width: 560px;
+  padding: 45px 0;
+  color: #fff;
+}
+
+.ow-hero .ow-eyebrow {
+  color: #fff;
+}
+
+.ow-hero h1 {
+  margin-bottom: 12px;
+  color: #fff;
+  font-size: clamp(38px, 5vw, 58px);
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.ow-hero h1 span {
+  display: block;
+  color: #ed2638;
+}
+
+.ow-hero-description {
+  max-width: 390px;
+  margin-bottom: 20px;
+  color: #e7edf3;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+/* ==========================================
+   STORY GALLERY AND FILTERS
+========================================== */
+
+.ow-gallery {
+  padding: 22px 0 35px;
+  background: #fff;
+}
+
+.ow-filters {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 27px;
+  overflow-x: auto;
+  padding: 0 0 3px;
+  scrollbar-width: none;
+}
+
+.ow-filters::-webkit-scrollbar {
+  display: none;
+}
+
+.ow-filters button {
+  flex-shrink: 0;
+  min-height: 36px;
+  padding: 0 17px;
+  border: 1px solid #e0e8f1;
+  border-radius: 30px;
+  background: #fff;
+  color: #173858;
+  font-size: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.ow-filters button:hover,
+.ow-filters button.selected {
+  border-color: #ed2638;
+  background: #ed2638;
+  color: #fff;
+}
+
+/* Section heading */
+
+.ow-section-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 17px;
+}
+
+.ow-section-heading h2 {
+  margin-bottom: 5px;
+  color: #102b49;
+  font-size: 23px;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+.ow-section-heading p:not(.ow-eyebrow) {
+  margin-bottom: 0;
+  color: #60758d;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.ow-text-link {
+  flex-shrink: 0;
+  margin-bottom: 5px;
+  color: #173858;
+  font-size: 10px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.ow-text-link:hover {
+  color: #ed2638;
+}
+
+/* Story cards */
+
+.ow-story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 19px;
+}
+
+.ow-card {
+  overflow: hidden;
+  border: 1px solid #e5ebf2;
+  border-radius: 9px;
+  background: #fff;
+  box-shadow: 0 5px 17px rgba(16, 43, 73, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ow-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 23px rgba(16, 43, 73, 0.13);
+}
+
+.ow-card-image {
+  position: relative;
+  height: 190px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.ow-card-image img {
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+
+.ow-card:hover .ow-card-image img {
+  transform: scale(1.06);
+}
+
+.ow-image-label {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 6px 10px;
+  border-radius: 20px;
+  background: #fff;
+  color: #173858;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.ow-card-arrow {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  background: #fff;
+  color: #102b49;
+  font-size: 25px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.ow-card-arrow:hover {
+  background: #ed2638;
+  color: #fff;
+}
+
+.ow-card-content {
+  padding: 13px 14px;
+}
+
+.ow-card-content h3 {
+  margin-bottom: 6px;
+  color: #102b49;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.ow-card-content > p {
+  margin-bottom: 11px;
+  color: #60758d;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.ow-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  color: #60758d;
+  font-size: 9px;
+}
+
+.ow-card-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.ow-empty {
+  padding: 30px;
+  color: #60758d;
+  text-align: center;
+}
+
+/* ==========================================
+   WHY IT MATTERS / TRUST FEATURES
+========================================== */
+
+.ow-trust {
+  width: 100%;
+  padding: 30px 0 35px;
+  background: linear-gradient(
+    110deg,
+    #e5f2fa 0%,
+    #edf6fb 45%,
+    #f7fbfd 75%,
+    #ffffff 100%
+  );
+}
+
+.ow-heading-column {
+  margin-bottom: 18px;
+}
+
+.ow-trust-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 0;
+}
+
+.ow-trust-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 130px;
+  padding: 12px 10px;
+  text-align: center;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.ow-trust-item:not(:last-child)::after {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 1px;
+  height: 75px;
+  background: #cbd9e6;
+  content: "";
+  transform: translateY(-50%);
+}
+
+.ow-trust-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 9px;
+  border-radius: 13px;
+  background: #dceefa;
+  color: #173858;
+  font-size: 22px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.ow-trust-item:nth-child(odd) .ow-trust-icon {
+  background: #fce5e6;
+  color: #c93642;
+}
+
+.ow-trust-item h3 {
+  margin-bottom: 5px;
+  color: #102b49;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.ow-trust-item p {
+  max-width: 145px;
+  margin-bottom: 0;
+  color: #60758d;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+/* Hover effect */
+
+.ow-trust-item:hover {
+  background: rgba(255, 255, 255, 0.7);
+  transform: translateY(-4px);
+}
+
+.ow-trust-item:hover .ow-trust-icon {
+  transform: scale(1.08);
+  box-shadow: 0 5px 15px rgba(23, 56, 88, 0.12);
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 768px) {
+  .ow-trust {
+    padding: 28px 0;
+  }
+
+  .ow-trust-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    row-gap: 12px;
+  }
+
+  .ow-trust-item {
+    min-height: 125px;
+  }
+
+  .ow-trust-item:nth-child(3)::after {
+    display: none;
+  }
+
+  .ow-trust-item:nth-child(4)::after {
+    display: block;
+  }
+}
+
+@media (max-width: 520px) {
+  .ow-trust-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .ow-trust-item {
+    min-height: 120px;
+  }
+
+  .ow-trust-item:nth-child(2n)::after {
+    display: none;
+  }
+
+  .ow-trust-item:nth-child(3)::after {
+    display: block;
+  }
+
+  .ow-trust-item h3 {
+    font-size: 12px;
+  }
+
+  .ow-trust-item p {
+    font-size: 10px;
+  }
+}
+
+/* ==========================================
+   PREMIUM VEHICLE GALLERY
+========================================== */
+
+.ow-vehicle-gallery {
+  padding: 30px 0 35px;
+  background: #fff;
+}
+
+.ow-vehicle-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: start;
+  gap: 13px;
+}
+
+.ow-vehicle-card {
+  position: relative;
+  overflow: hidden;
+  min-width: 0;
+  height: 180px;
+  border-radius: 9px;
+  background: #102b49;
+  box-shadow: 0 5px 15px rgba(16, 43, 73, 0.12);
+}
+
+.ow-vehicle-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.ow-vehicle-image img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+
+.ow-vehicle-card:hover .ow-vehicle-image img {
+  transform: scale(1.06);
+}
+
+.ow-vehicle-overlay {
+  position: absolute;
+  inset: auto 0 0;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 22px 12px 12px;
+  background: linear-gradient(transparent, rgba(3, 21, 38, 0.9));
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.ow-vehicle-overlay:hover {
+  color: #ff5362;
+}
+
+/* First vehicle card */
+
+.ow-vehicle-featured {
+  height: auto;
+  overflow: hidden;
+  border: 1px solid #e1e9f2;
+  background: #fff;
+}
+
+.ow-vehicle-featured .ow-vehicle-image {
+  height: 150px;
+}
+
+.ow-vehicle-content {
+  padding: 12px;
+}
+
+.ow-vehicle-content h3 {
+  margin-bottom: 8px;
+  color: #102b49;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.ow-vehicle-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 12px;
+  color: #60758d;
+  font-size: 9px;
+}
+
+.ow-vehicle-content > strong {
+  display: block;
+  margin-bottom: 12px;
+  color: #ed2638;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.ow-vehicle-details {
+  display: flex;
+  justify-content: flex-end;
+  color: #ed2638;
+  font-size: 10px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.ow-vehicle-details:hover {
+  color: #b70f24;
+}
+
+/* ==========================================
+   CUSTOMER TESTIMONIAL
+========================================== */
+
+.ow-testimonial-section {
+  width: 96%;
+  max-width: 1500px;
+  margin: 10px auto 25px;
+  padding: 23px 30px;
+  overflow: hidden;
+  border: 1px solid #284b69;
+  border-radius: 12px;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 32, 55, 0.98),
+      rgba(5, 32, 55, 0.92) 65%,
+      rgba(5, 32, 55, 0.65)
+    ),
+    url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1400&q=85")
+    center / cover no-repeat;
+  color: #fff;
+}
+
+.ow-testimonial-inner {
+  display: grid;
+  grid-template-columns: 0.9fr 1.4fr;
+  align-items: center;
+  gap: 35px;
+  min-height: 150px;
+}
+
+.ow-testimonial-heading .ow-eyebrow {
+  color: #fff;
+}
+
+.ow-testimonial-heading h2 {
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.ow-testimonial-heading > p:not(.ow-eyebrow) {
+  margin-bottom: 15px;
+  color: #d5e1ec;
+  font-size: 11px;
+}
+
+.ow-slider-controls {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.ow-slider-controls > button:not(.ow-slider-dot) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 27px;
+  height: 27px;
+  border: 1px solid #58748e;
+  border-radius: 50%;
+  background: transparent;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.ow-slider-controls > button:not(.ow-slider-dot):hover {
+  border-color: #ed2638;
+  background: #ed2638;
+}
+
+.ow-slider-dot {
+  width: 7px;
+  height: 7px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: #8ca1b5;
+  cursor: pointer;
+}
+
+.ow-slider-dot.active {
+  background: #ed2638;
+}
+
+.ow-testimonial-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  min-height: 140px;
+  padding: 18px 22px;
+  border: 1px solid rgba(255, 255, 255, 0.17);
+  border-radius: 12px;
+  background: rgba(37, 76, 110, 0.58);
+  backdrop-filter: blur(8px);
+}
+
+.ow-testimonial-card > img {
+  flex-shrink: 0;
+  width: 55px;
+  height: 55px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.ow-testimonial-card > div {
+  position: relative;
+}
+
+.ow-quote-mark {
+  color: #fff;
+  font-family: Georgia, serif;
+  font-size: 29px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.ow-testimonial-card p {
+  margin-bottom: 10px;
+  color: #f1f5f9;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.ow-testimonial-card h3 {
+  margin-bottom: 3px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.ow-testimonial-card small {
+  color: #c4d4e3;
+  font-size: 10px;
+}
+
+/* ==========================================
+   FROM SHOWROOM TO DRIVEWAY
+========================================== */
+
+.ow-journey {
+  position: relative;
+  padding: 28px 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(4, 30, 52, 0.97),
+      rgba(4, 30, 52, 0.90)
+    ),
+    url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1600&q=85")
+    center / cover no-repeat;
+  color: #fff;
+}
+
+.ow-journey-inner {
+  display: grid;
+  grid-template-columns: 0.85fr 2fr;
+  align-items: center;
+  gap: 25px;
+}
+
+.ow-journey-heading > p {
+  margin-bottom: 8px;
+  color: #ed2638;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+}
+
+.ow-journey-heading h2 {
+  margin-bottom: 0;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.ow-steps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.ow-step {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.ow-step-icon {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 9px;
+  border-radius: 50%;
+  background: #fff;
+  color: #173858;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.ow-step-line {
+  position: absolute;
+  top: 24px;
+  left: calc(50% + 32px);
+  width: calc(100% - 42px);
+  height: 1px;
+  background: rgba(255, 255, 255, 0.65);
+}
+
+.ow-step:last-child .ow-step-line {
+  display: none;
+}
+
+.ow-step h3,
+.ow-step p {
+  margin-bottom: 3px;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.ow-step p {
+  font-size: 9px;
+  font-weight: 500;
+}
+
+/* ==========================================
+   FINAL CTA
+========================================== */
+
+.ow-cta {
+  position: relative;
+  min-height: 265px;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(
+      90deg,
+      #fff 0%,
+      rgba(255, 255, 255, 0.98) 35%,
+      rgba(255, 255, 255, 0.45) 65%,
+      rgba(255, 255, 255, 0.02) 100%
+    ),
+    url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=90")
+    center right / cover no-repeat;
+}
+
+.ow-cta-content {
+  max-width: 520px;
+  padding: 42px 0;
+}
+
+.ow-cta h2 {
+  margin-bottom: 10px;
+  color: #102b49;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.ow-cta-content > p:not(.ow-eyebrow) {
+  margin-bottom: 18px;
+  color: #52677f;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.ow-cta-buttons {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* ==========================================
+   STORY MODAL
+========================================== */
+
+.ow-modal-overlay {
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(3, 19, 34, 0.8);
+  backdrop-filter: blur(5px);
+}
+
+.ow-modal {
+  position: relative;
+  width: 100%;
+  max-width: 620px;
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 13px;
+  background: #fff;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  animation: ow-modal-open 0.25s ease;
+}
+
+@keyframes ow-modal-open {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ow-modal > img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+}
+
+.ow-modal-content {
+  padding: 25px;
+}
+
+.ow-modal-content h2 {
+  margin-bottom: 10px;
+  color: #102b49;
+  font-size: 24px;
+}
+
+.ow-modal-content > p:not(.ow-eyebrow) {
+  color: #60758d;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.ow-modal-content small {
+  display: block;
+  margin-bottom: 18px;
+  color: #60758d;
+  font-size: 11px;
+}
+
+.ow-modal-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 50%;
+  background: #fff;
+  color: #102b49;
+  font-size: 25px;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.ow-modal-close:hover {
+  background: #ed2638;
+  color: #fff;
+}
+
+/* ==========================================
+   TABLET RESPONSIVE
+========================================== */
+
+@media (max-width: 992px) {
+  .ow-container {
+    width: 94%;
+  }
+
+  .ow-hero {
+    min-height: 320px;
+  }
+
+  .ow-story-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .ow-trust-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    row-gap: 22px;
+  }
+
+  .ow-trust-item:nth-child(3)::after {
+    display: none;
+  }
+
+  .ow-vehicle-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .ow-vehicle-card {
+    height: 210px;
+  }
+
+  .ow-vehicle-featured {
+    height: auto;
+  }
+
+  .ow-vehicle-featured .ow-vehicle-image {
+    height: 165px;
+  }
+
+  .ow-testimonial-inner {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .ow-journey-inner {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .ow-journey-heading {
+    text-align: center;
+  }
+}
+
+/* ==========================================
+   MOBILE RESPONSIVE
+========================================== */
+
+@media (max-width: 600px) {
+  .ow-container {
+    width: 90%;
+  }
+
+  .ow-hero {
+    min-height: 350px;
+    background-position: 60% center;
+  }
+
+  .ow-hero-content {
+    padding: 35px 0;
+  }
+
+  .ow-hero h1 {
+    font-size: 36px;
+  }
+
+  .ow-hero-description {
+    max-width: 300px;
+    font-size: 11px;
+  }
+
+  .ow-gallery {
+    padding-top: 18px;
+  }
+
+  .ow-filters {
+    margin-bottom: 23px;
+    gap: 8px;
+  }
+
+  .ow-filters button {
+    min-height: 34px;
+    padding: 0 13px;
+    font-size: 9px;
+  }
+
+  .ow-section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .ow-section-heading h2 {
+    font-size: 21px;
+  }
+
+  .ow-text-link {
+    margin-bottom: 0;
+  }
+
+  .ow-story-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .ow-card-image {
+    height: 220px;
+  }
+
+  .ow-card-content h3 {
+    font-size: 14px;
+  }
+
+  .ow-card-content > p {
+    font-size: 11px;
+  }
+
+  .ow-trust {
+    padding: 25px 0;
+  }
+
+  .ow-trust-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 22px;
+  }
+
+  .ow-trust-item {
+    padding: 8px;
+  }
+
+  .ow-trust-item::after {
+    display: none;
+  }
+
+  .ow-trust-icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .ow-vehicle-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ow-vehicle-card {
+    height: 220px;
+  }
+
+  .ow-vehicle-featured {
+    height: auto;
+  }
+
+  .ow-vehicle-featured .ow-vehicle-image {
+    height: 200px;
+  }
+
+  .ow-testimonial-section {
+    width: 92%;
+    padding: 22px 17px;
+  }
+
+  .ow-testimonial-heading h2 {
+    font-size: 21px;
+  }
+
+  .ow-testimonial-card {
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .ow-testimonial-card > img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .ow-testimonial-card p {
+    font-size: 10px;
+  }
+
+  .ow-journey {
+    padding: 25px 0;
+  }
+
+  .ow-journey-heading h2 {
+    font-size: 23px;
+  }
+
+  .ow-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 25px;
+  }
+
+  .ow-step-line {
+    display: none;
+  }
+
+  .ow-cta {
+    min-height: 320px;
+    background-position: 65% center;
+  }
+
+  .ow-cta-content {
+    padding: 35px 0;
+  }
+
+  .ow-cta h2 {
+    max-width: 310px;
+    font-size: 26px;
+  }
+
+  .ow-cta-content > p:not(.ow-eyebrow) {
+    max-width: 290px;
+    font-size: 11px;
+  }
+
+  .ow-cta-buttons {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .ow-modal-overlay {
+    padding: 13px;
+  }
+
+  .ow-modal > img {
+    height: 210px;
+  }
+
+  .ow-modal-content {
+    padding: 20px;
+  }
+
+  .ow-modal-content h2 {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 360px) {
+  .ow-hero h1 {
+    font-size: 31px;
+  }
+
+  .ow-trust-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .ow-card-meta {
+    flex-wrap: wrap;
+  }
+}
+
+
+/* ========================================
+   CUSTOMER TESTIMONIAL AUTO SLIDER
+======================================== */
+
+.ow-testimonial-card {
+  animation: owTestimonialFade 0.7s ease-in-out;
+  will-change: opacity, transform;
+}
+
+@keyframes owTestimonialFade {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ow-testimonial-card img {
+  transition: transform 0.5s ease;
+}
+
+.ow-testimonial-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Slider controls */
+
+.ow-slider-controls button {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.ow-slider-dot {
+  transform: scale(1);
+}
+
+.ow-slider-dot.active {
+  background: #ed2638;
+  transform: scale(1.3);
+}
+
+/* Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+  .ow-testimonial-card {
+    animation: none;
+  }
+
+  .ow-testimonial-card img,
+  .ow-slider-controls button {
+    transition: none;
+  }
+}
+
+
+/* =========================================
+   HERO - AUTOMATIC CAR IMAGE SLIDER
+========================================= */
+
+.ow-hero {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.ow-hero-slides {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.ow-hero-slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center 55%;
+  opacity: 0;
+  transform: scale(1.04);
+  transition:
+    opacity 1.2s ease-in-out,
+    transform 6s ease;
+}
+
+.ow-hero-slide.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.ow-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    90deg,
+    rgba(4, 27, 46, 0.97) 0%,
+    rgba(4, 27, 46, 0.85) 35%,
+    rgba(4, 27, 46, 0.25) 75%,
+    rgba(4, 27, 46, 0.1) 100%
+  );
+  pointer-events: none;
+}
+
+.ow-hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* =========================================
+   WHY IT MATTERS - REFERENCE IMAGE DESIGN
+========================================= */
+
+.ow-trust {
+  padding: 65px 0;
+  background: linear-gradient(
+    90deg,
+    #e4f3fc 0%,
+    #eaf6fc 48%,
+    #ffffff 100%
+  );
+  overflow: hidden;
+}
+
+.ow-trust-layout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.5fr;
+  align-items: center;
+  gap: 55px;
+}
+
+.ow-trust-intro {
+  max-width: 430px;
+}
+
+.ow-trust-intro .ow-eyebrow {
+  color: #123657;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.ow-trust-intro .ow-eyebrow::before {
+  content: "";
+  display: inline-block;
+  width: 35px;
+  height: 3px;
+  margin-right: 12px;
+  vertical-align: middle;
+  background: #ed2638;
+}
+
+.ow-trust-intro h2 {
+  margin: 20px 0;
+  color: #0c1e3c;
+  font-size: clamp(30px, 3.5vw, 48px);
+  font-weight: 800;
+  line-height: 1.18;
+}
+
+.ow-trust-intro > p:last-child {
+  max-width: 410px;
+  color: #111827;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+/* Feature cards */
+
+.ow-trust-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 24px;
+}
+
+.ow-trust-item {
+  grid-column: span 2;
+  min-height: 230px;
+  padding: 30px;
+  border: 1px solid #b9cbd8;
+  border-radius: 17px;
+  background: rgba(232, 244, 252, 0.75);
+  box-shadow: 0 7px 15px rgba(20, 51, 75, 0.09);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.35s ease;
+}
+
+.ow-trust-item:nth-child(4) {
+  grid-column: 1 / span 3;
+}
+
+.ow-trust-item:nth-child(5) {
+  grid-column: 4 / span 3;
+}
+
+.ow-trust-item:hover {
+  transform: translateY(-7px);
+  background: #f5fbff;
+  border-color: #8eafc8;
+  box-shadow: 0 14px 28px rgba(20, 51, 75, 0.14);
+}
+
+.ow-trust-icon {
+  width: 66px;
+  height: 66px;
+  margin-bottom: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  background: #d8edfc;
+  color: #174c7b;
+  font-size: 32px;
+  transition: all 0.35s ease;
+}
+
+.ow-trust-item:nth-child(odd) .ow-trust-icon {
+  background: #fbe4e5;
+  color: #a93f45;
+}
+
+.ow-trust-item:hover .ow-trust-icon {
+  transform: scale(1.08) rotate(-4deg);
+}
+
+.ow-trust-item h3 {
+  margin-bottom: 10px;
+  color: #174b79;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+.ow-trust-item p {
+  margin: 0;
+  color: #111827;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   VEHICLE GALLERY - ALL CARDS SAME DESIGN
+========================================= */
+
+.ow-vehicle-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  align-items: stretch;
+}
+
+.ow-vehicle-card {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #102e49;
+  box-shadow: 0 6px 18px rgba(11, 35, 59, 0.13);
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.ow-vehicle-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 28px rgba(11, 35, 59, 0.2);
+}
+
+.ow-vehicle-image {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.ow-vehicle-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.ow-vehicle-card:hover .ow-vehicle-image img {
+  transform: scale(1.08);
+}
+
+.ow-vehicle-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  padding: 18px;
+  background: linear-gradient(
+    180deg,
+    transparent 20%,
+    rgba(3, 20, 36, 0.2) 45%,
+    rgba(3, 20, 36, 0.94) 100%
+  );
+  color: #fff;
+  text-decoration: none;
+  opacity: 1;
+  transition: background 0.3s ease;
+}
+
+.ow-vehicle-overlay-info {
+  width: 100%;
+  transform: translateY(7px);
+  transition: transform 0.35s ease;
+}
+
+.ow-vehicle-card:hover .ow-vehicle-overlay-info {
+  transform: translateY(0);
+}
+
+.ow-vehicle-overlay-info h3 {
+  margin: 0 0 8px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.ow-vehicle-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 9px;
+  color: #e2edf7;
+  font-size: 11px;
+}
+
+.ow-vehicle-overlay-info strong {
+  display: block;
+  margin-bottom: 10px;
+  color: #ff4350;
+  font-size: 16px;
+}
+
+.ow-vehicle-overlay-info a {
+  display: inline-block;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.ow-vehicle-overlay-info a:hover {
+  color: #ff4755;
+}
+
+
+/* =========================================
+   FROM SHOWROOM TO DRIVEWAY - HOVER GLOW
+========================================= */
+
+.ow-steps {
+  align-items: start;
+}
+
+.ow-step {
+  position: relative;
+  text-align: center;
+  padding: 15px 12px;
+  border-radius: 14px;
+  transition: all 0.35s ease;
+  cursor: pointer;
+}
+
+.ow-step-icon {
+  position: relative;
+  width: 62px;
+  height: 62px;
+  margin: 0 auto 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(255, 255, 255, 0.85);
+  border-radius: 50%;
+  background: #fff;
+  color: #123b60;
+  font-size: 26px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+  transition: all 0.35s ease;
+}
+
+.ow-step h3,
+.ow-step p {
+  transition: all 0.35s ease;
+}
+
+.ow-step h3 {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.ow-step p {
+  color: #dce8f2;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.ow-step:hover {
+  transform: translateY(-7px);
+}
+
+.ow-step:hover .ow-step-icon {
+  color: #fff;
+  background: #ed2638;
+  border-color: #fff;
+  box-shadow:
+    0 0 0 6px rgba(237, 38, 56, 0.18),
+    0 0 22px rgba(237, 38, 56, 0.75);
+  transform: scale(1.1);
+}
+
+.ow-step:hover h3 {
+  color: #ff5260;
+  text-shadow: 0 0 12px rgba(255, 65, 80, 0.55);
+}
+
+.ow-step:hover p {
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.45);
+}
+
+
+/* =========================================
+   TESTIMONIAL ANIMATION
+========================================= */
+
+.ow-testimonial-card {
+  animation: owTestimonialFade 0.7s ease-in-out;
+  will-change: opacity, transform;
+}
+
+@keyframes owTestimonialFade {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ow-testimonial-card img {
+  transition: transform 0.5s ease;
+}
+
+.ow-testimonial-card:hover img {
+  transform: scale(1.05);
+}
+
+.ow-slider-controls button {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.ow-slider-dot.active {
+  background: #ed2638;
+  transform: scale(1.3);
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 1000px) {
+  .ow-trust-layout {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .ow-trust-intro {
+    max-width: 650px;
+  }
+
+  .ow-vehicle-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  .ow-trust {
+    padding: 40px 0;
+  }
+
+  .ow-trust-intro h2 {
+    font-size: 30px;
+  }
+
+  .ow-trust-intro > p:last-child {
+    font-size: 15px;
+  }
+
+  .ow-trust-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .ow-trust-item,
+  .ow-trust-item:nth-child(4),
+  .ow-trust-item:nth-child(5) {
+    grid-column: span 1;
+    min-height: 190px;
+    padding: 18px;
+  }
+
+  .ow-trust-item h3 {
+    font-size: 16px;
+  }
+
+  .ow-trust-item p {
+    font-size: 13px;
+  }
+
+  .ow-trust-icon {
+    width: 52px;
+    height: 52px;
+    font-size: 25px;
+  }
+
+  .ow-vehicle-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .ow-vehicle-image {
+    height: 230px;
+  }
+
+  .ow-steps {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+  }
+
+  .ow-step-line {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ow-hero-slide,
+  .ow-vehicle-card,
+  .ow-vehicle-image img,
+  .ow-step,
+  .ow-step-icon,
+  .ow-testimonial-card {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+/* =================================
+   WHY IT MATTERS - COMPACT LAYOUT
+================================= */
+
+.ow-trust {
+  padding: 45px 0;
+  background: linear-gradient(
+    110deg,
+    #e5f2fa 0%,
+    #f4f9fc 48%,
+    #ffffff 100%
+  );
+}
+
+.ow-trust-layout {
+  display: grid;
+  grid-template-columns: 0.85fr 1.5fr;
+  align-items: center;
+  gap: 45px;
+}
+
+.ow-trust-heading {
+  max-width: 390px;
+}
+
+.ow-trust-heading h2 {
+  color: #092744;
+  font-size: clamp(27px, 3vw, 36px);
+  line-height: 1.2;
+  margin: 12px 0;
+  font-weight: 750;
+}
+
+.ow-trust-heading > p:last-child {
+  color: #344b60;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.ow-trust-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+}
+
+.ow-trust-item {
+  grid-column: span 2;
+  min-height: 185px;
+  padding: 22px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid #c5d6e3;
+  border-radius: 16px;
+  box-shadow: 0 5px 14px rgba(12, 42, 68, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ow-trust-item:nth-child(4) {
+  grid-column: 2 / span 2;
+}
+
+.ow-trust-item:nth-child(5) {
+  grid-column: 4 / span 2;
+}
+
+.ow-trust-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 22px rgba(12, 42, 68, 0.13);
+}
+
+.ow-trust-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 13px;
+  background: #dceefa;
+  color: #174b76;
+  font-size: 25px;
+  margin-bottom: 13px;
+}
+
+.ow-trust-item:nth-child(1) .ow-trust-icon,
+.ow-trust-item:nth-child(4) .ow-trust-icon {
+  background: #fbe5e5;
+  color: #bd4e4e;
+}
+
+.ow-trust-item h3 {
+  color: #174b76;
+  font-size: 17px;
+  line-height: 1.3;
+  margin-bottom: 7px;
+}
+
+.ow-trust-item p {
+  color: #25394b;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+
+/* =================================
+   CUSTOMER JOURNEY - COMPACT LAYOUT
+================================= */
+
+.ow-journey {
+  padding: 35px 0 40px;
+  background:
+    linear-gradient(rgba(5, 31, 54, 0.92), rgba(5, 31, 54, 0.92)),
+    url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=85");
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+}
+
+.ow-journey-inner {
+  display: grid;
+  grid-template-columns: 0.75fr 1.6fr;
+  align-items: center;
+  gap: 35px;
+}
+
+.ow-journey-heading p {
+  color: #ff3348;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+  margin-bottom: 9px;
+}
+
+.ow-journey-heading h2 {
+  font-size: 27px;
+  line-height: 1.2;
+  color: #ffffff;
+  margin: 0;
+}
+
+.ow-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: start;
+  gap: 0;
+}
+
+.ow-step {
+  position: relative;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+/* Circle */
+
+.ow-step-icon {
+  position: relative;
+  z-index: 2;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #123c60;
+  font-size: 23px;
+  border: 2px solid #ffffff;
+  transition: all 0.3s ease;
+}
+
+/* Connector line - centred between circles */
+
+.ow-step:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 24px;
+  left: calc(50% + 24px);
+  width: calc(100% - 48px);
+  height: 2px;
+  background: rgba(255, 255, 255, 0.65);
+  transform: translateY(-50%);
+  z-index: 1;
+  transition: background 0.3s ease;
+}
+
+/* Text */
+
+.ow-step h3 {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  margin: 12px 0 4px;
+  transition: color 0.3s ease;
+}
+
+.ow-step p {
+  color: #d5e4ef;
+  font-size: 11px;
+  line-height: 1.4;
+  margin: 0;
+  max-width: 125px;
+  transition: color 0.3s ease;
+}
+
+/* Hover glow */
+
+.ow-step:hover .ow-step-icon {
+  background: #ff3348;
+  color: #ffffff;
+  border-color: #ff3348;
+  box-shadow:
+    0 0 0 6px rgba(255, 51, 72, 0.15),
+    0 0 22px rgba(255, 51, 72, 0.8);
+  transform: scale(1.1);
+}
+
+.ow-step:hover h3 {
+  color: #ff5263;
+}
+
+.ow-step:hover p {
+  color: #ffffff;
+}
+
+.ow-step:hover::after {
+  background: #ff5263;
+}
+
+
+/* =================================
+   RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 900px) {
+  .ow-trust-layout,
+  .ow-journey-inner {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .ow-trust-heading {
+    max-width: 600px;
+  }
+
+  .ow-trust-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .ow-trust {
+    padding: 35px 0;
+  }
+
+  .ow-trust-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .ow-trust-item,
+  .ow-trust-item:nth-child(4),
+  .ow-trust-item:nth-child(5) {
+    grid-column: auto;
+    min-height: 165px;
+    padding: 16px 12px;
+  }
+
+  .ow-trust-item h3 {
+    font-size: 15px;
+  }
+
+  .ow-trust-item p {
+    font-size: 12px;
+  }
+
+  .ow-journey {
+    padding: 30px 0;
+  }
+
+  .ow-journey-inner {
+    gap: 25px;
+  }
+
+  .ow-journey-heading h2 {
+    font-size: 24px;
+  }
+
+  .ow-steps {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 28px;
+  }
+
+  /* Remove horizontal connectors on mobile */
+  .ow-step::after {
+    display: none;
+  }
+}
+
+@media (max-width: 380px) {
+  .ow-trust-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ow-trust-item,
+  .ow-trust-item:nth-child(4),
+  .ow-trust-item:nth-child(5) {
+    min-height: 145px;
+  }
+}
